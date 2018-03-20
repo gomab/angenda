@@ -23,7 +23,9 @@
    
     <ul>
         <?php foreach($contacts as $contact): ?>
-            <li><?= $contact['lastName']; ?><a href="delete.php?numContact=<?= $contact['id'] ;?>">Delete</a></li>
+            <li><?= $contact['lastName']; ?><a href="delete.php?numContact=<?= $contact['id'] ;?>">Delete</a>
+            <a href="update.php?numContact=<?= $contact['id'] ;?>">Edit</a>
+            </li>
         <?php endforeach; ?>
     </ul>
 </body>
