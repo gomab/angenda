@@ -23,7 +23,7 @@
    
     <ul>
         <?php foreach($contacts as $contact): ?>
-            <li><?= $contact['lastName']; ?></li>
+            <li><?= $contact['lastName']; ?><a href="delete.php?numContact=<?= $contact['id'] ;?>">Delete</a></li>
         <?php endforeach; ?>
     </ul>
 </body>
